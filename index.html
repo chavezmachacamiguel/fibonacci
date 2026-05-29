@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci: Ahorro Progresivo Inteligente</title>
+    <link rel="stylesheet" href="./css/stylo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Planificador de Ahorro Progresivo</h1>
+        <p><strong>Temática:</strong> Finanzas Personales Basadas en la Serie de Fibonacci</p>
+        <p><strong>Estudiante:</strong> Miguel Felix Chavez Machaca</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Contexto del Problema</h2>
+            <p>Ahorrar una cantidad fija mensual puede volverse monótono o insuficiente para metas exponenciales. Este sistema implementa un método donde el hábito de ahorro se intensifica mes a mes siguiendo la curva natural de Fibonacci, permitiendo empezar con montos muy bajos y escalar de forma controlada.</p>
+        </section>
+
+        <section class="card">
+            <h2>Explicación del Algoritmo</h2>
+            <p>El programa calcula el dinero correspondiente a cada mes sumando las bases de los dos meses anteriores ($A + B = C$). El algoritmo se ejecuta de manera limpia mediante variables simples de control numérico, prescindiendo totalmente de arrays o vectores para asegurar un procesamiento eficiente.</p>
+        </section>
+
+        <section class="card">
+            <h2>Configura tu Plan de Ahorro</h2>
+            <form id="formFibonacci" onsubmit="event.preventDefault(); calcularAhorro();">
+                <label for="mesesInput">¿Cuántos meses deseas proyectar?</label>
+                <input type="number" id="mesesInput" min="1" max="40" placeholder="Ej. 6" required>
+                <button type="submit">Generar Plan de Ahorro</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Tu Cronograma de Depósitos</h2>
+            <div id="resultadoAhorro">Introduce los meses para visualizar tu proyección en pantalla...</div>
+        </section>
+
+        <section class="card">
+            <h2>Conclusión</h2>
+            <p>La sucesión de Fibonacci aplicada a las finanzas demuestra que la constancia y el incremento progresivo generan acumulaciones de capital sorprendentes en periodos cortos, adaptando dinámicas de crecimiento biológico a la economía doméstica.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="#">Link al Repositorio</a> | <a href="#">Link a la Página Publicada</a></p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

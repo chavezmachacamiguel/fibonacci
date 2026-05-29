@@ -1,0 +1,170 @@
+/* ==========================================================================
+   ESTILOS: FIBONACCI - AHORRO PROGRESIVO (Temática Financiera / Fintech)
+   ========================================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+body {
+    background-color: #f3f7f4; /* Fondo gris verdoso muy suave */
+    color: #2c3e50;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Encabezado con degradado verde financiero */
+header {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 20px rgba(56, 239, 125, 0.2);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin-top: 4px;
+}
+
+main {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Tarjetas de contenido estilo tarjetas bancarias limpias */
+.card {
+    background: #ffffff;
+    padding: 24px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e8f0ec;
+}
+
+.card h2 {
+    color: #11998e;
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+ul {
+    margin-left: 20px;
+    padding-top: 8px;
+}
+
+ul li {
+    margin-bottom: 6px;
+}
+
+/* Formulario e Inputs */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+input[type="number"] {
+    padding: 14px;
+    font-size: 1rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input[type="number"]:focus {
+    border-color: #11998e;
+}
+
+/* Botón de acción principal */
+button {
+    background-color: #11998e;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #0e8278;
+    transform: translateY(-1px);
+}
+
+/* Contenedor de la tabla de resultados financieros */
+#resultadoAhorro {
+    background-color: #f8fafc;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px dashed #cbd5e1;
+    overflow-x: auto; /* Permite scroll si la tabla es muy ancha en móviles */
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #11998e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   DISEÑO RESPONSIVO (Móviles avanzados y Escritorio)
+   ========================================================================== */
+@media (min-width: 600px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    form {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    input[type="number"] {
+        flex: 2;
+    }
+
+    button {
+        flex: 1;
+        white-space: nowrap;
+    }
+}
